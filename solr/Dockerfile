@@ -1,8 +1,8 @@
 FROM karlstoney/jvm:latest
 
-ENV SOLR_VERSION=6.4.1
+ENV SOLR_VERSION=6.6.2
 ENV SOLR_HOME=/opt/solr
-ENV SOLR_DIST=http://mirrors.ukfast.co.uk/sites/ftp.apache.org/lucene/solr/$SOLR_VERSION/solr-$SOLR_VERSION.tgz
+ENV SOLR_DIST=http://www-eu.apache.org/dist/lucene/solr/$SOLR_VERSION/solr-$SOLR_VERSION.tgz
 
 RUN curl --silent -fSL "$SOLR_DIST" -o /tmp/solr.tar.gz && \
     tar -xf /tmp/solr.tar.gz -C /opt/ && \
