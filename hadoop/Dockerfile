@@ -11,7 +11,7 @@ ENV PATH $HADOOP_HOME/bin/:$PATH
 
 # GET Hadoop
 ENV HADOOP_VERSION 2.9.0
-ENV HADOOP_DIST http://www.apache.org/dyn/closer.cgi/hadoop/common/hadoop-$HADOOP_VERSION/hadoop-$HADOOP_VERSION.tar.gz
+ENV HADOOP_DIST http://www-eu.apache.org/dist/hadoop/common/hadoop-$HADOOP_VERSION/hadoop-$HADOOP_VERSION.tar.gz
 
 RUN curl --silent -fSL "$HADOOP_DIST" -o /tmp/hadoop.tar.gz && \
     tar -xf /tmp/hadoop.tar.gz -C /opt/ && \
