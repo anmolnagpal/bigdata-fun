@@ -13,7 +13,8 @@ ENV PATH $HBASE_HOME/bin/:$PATH
 
 # Get HBase 
 ENV HBASE_VERSION 1.3.1
-ENV HBASE_DIST http://www.apache.org/dist/hbase/hbase/$HBASE_VERSION/hbase-$HBASE_VERSION-bin.tar.gz
+ENV HBASE_DIST http://www.apache.org/dist/hbase/$HBASE_VERSION/hbase-$HBASE_VERSION-bin.tar.gz
+
 RUN curl --silent -fSL "$HBASE_DIST" -o /tmp/hbase.tar.gz && \
     tar -xf /tmp/hbase.tar.gz -C /opt/ && \
     rm -f /tmp/hbase.tar.gz && \
