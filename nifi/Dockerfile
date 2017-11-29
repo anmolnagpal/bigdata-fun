@@ -1,9 +1,9 @@
 FROM karlstoney/jvm:latest
 
-ENV NIFI_VERSION=1.1.1
+ENV NIFI_VERSION=1.4.0
 ENV NIFI_HOME=/opt/nifi
 
-ENV NIFI_DIST=http://mirrors.ukfast.co.uk/sites/ftp.apache.org/nifi/$NIFI_VERSION/nifi-$NIFI_VERSION-bin.tar.gz
+ENV NIFI_DIST=http://www-eu.apache.org/dist/nifi/$NIFI_VERSION/nifi-$NIFI_VERSION-bin.tar.gz
 
 RUN curl --silent -fSL "$NIFI_DIST" -o /tmp/nifi.tar.gz && \
     tar -xf /tmp/nifi.tar.gz -C /opt/ && \
