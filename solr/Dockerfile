@@ -1,6 +1,7 @@
 FROM karlstoney/jvm:latest
 
-ENV SOLR_VERSION=6.6.2
+  
+ENV SOLR_VERSION=7.1.0
 ENV SOLR_HOME=/opt/solr
 ENV SOLR_DIST=http://www-eu.apache.org/dist/lucene/solr/$SOLR_VERSION/solr-$SOLR_VERSION.tgz
 
